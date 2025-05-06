@@ -1,0 +1,14 @@
+[allowlist]
+description = "file allow lists"
+paths = [
+    '''gitleaks.toml''',
+    '''plugin-(.*?)-tools.cjs''',
+    '''yarn-(.*?)(.cjs)''',
+]
+
+# ----- BEGIN Agora AppId -----
+[[rules]]
+id = "agora-appid"
+description = "Agora AppId"
+regex = '''"[0-9a-f]{32}"'''
+# ----- END Agora AppId -----

@@ -1,0 +1,34 @@
+diff --git a/dist/HoloColorPicker.js b/dist/HoloColorPicker.js
+index a1771428989e9f26f9e4a7a7fbf91450dd07a9ff..e9e1febfa664bfc02902c1f36d9b8738a0079b07 100644
+--- a/dist/HoloColorPicker.js
++++ b/dist/HoloColorPicker.js
+@@ -12,8 +12,9 @@ var __extends = (this && this.__extends) || (function () {
+     };
+ })();
+ import React from "react";
+-import { I18nManager, Image, InteractionManager, Slider, StyleSheet, TouchableOpacity, View, } from "react-native";
++import { I18nManager, Image, InteractionManager, StyleSheet, TouchableOpacity, View, } from "react-native";
+ import tinycolor from "tinycolor2";
++import Slider from '@react-native-community/slider';
+ import { createPanResponder } from "./utils";
+ var HoloColorPicker = /** @class */ (function (_super) {
+     __extends(HoloColorPicker, _super);
+diff --git a/src/HoloColorPicker.tsx b/src/HoloColorPicker.tsx
+index 51a7bcc3b43975d8d9c3a1c45b8907ba814b4869..6707587cb0c8a6ea1524f4c99b31cd6f54a9d117 100644
+--- a/src/HoloColorPicker.tsx
++++ b/src/HoloColorPicker.tsx
+@@ -4,13 +4,12 @@ import {
+   Image,
+   InteractionManager,
+   PanResponderInstance,
+-  Slider,
+   StyleSheet,
+   TouchableOpacity,
+   View,
+ } from "react-native"
+ import tinycolor from "tinycolor2"
+-
++import Slider from '@react-native-community/slider';
+ import { HsvColor, IPickerProps, Point2D } from "./typeHelpers"
+ import { createPanResponder } from "./utils"
+ 
