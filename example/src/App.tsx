@@ -25,7 +25,7 @@ import Hooks from './examples/hook';
 
 const RootStack = createNativeStackNavigator<any>();
 
-const DATA = [Basic, Advanced, Hooks];
+const DATA = [Basic];//[Basic, Advanced, Hooks]
 
 export default function App() {
   const [version, setVersion] = useState<SDKBuildInfo>({});

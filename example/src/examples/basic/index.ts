@@ -5,18 +5,12 @@ import StringUid from './StringUid/StringUid';
 const Basic = {
   title: 'Basic',
   data: [
-    {
-      name: 'JoinChannelAudio',
-      component: JoinChannelAudio,
-    },
+    
     {
       name: 'JoinChannelVideo',
       component: JoinChannelVideo,
     },
-    {
-      name: 'StringUid',
-      component: StringUid,
-    },
+   
   ],
 };
 
